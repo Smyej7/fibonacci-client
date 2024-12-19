@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <label for="numberInput">Enter a number :</label>
+        <input id="numberInput" type="number" [(ngModel)]="number">
+        <button (click)="getData()">Validate</button>
+    </div>
+
+    <div *ngIf="response">
+        <span>Number: {{ response.number }}</span><br>
+        <span>Index: {{ response.index }}</span><br>
+        <span>Is included: {{ response.included }}</span><br>
+    </div>
+</div>
